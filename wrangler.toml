@@ -1,0 +1,13 @@
+name = "redirects"
+type = "javascript"
+
+compatibility_date = "2022-04-22"
+routes = ["griko.dev/*"]
+workers_dev = false
+
+[[kv_namespaces]]
+binding = "REDIRECTS"
+id = "68d001e9c2144621936848ec766b0535"
+
+[vars]
+BASE_URL = "https://griko.id"

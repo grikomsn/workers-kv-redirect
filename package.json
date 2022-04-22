@@ -1,0 +1,23 @@
+{
+  "name": "workers-kv-redirect",
+  "description": "A template for kick starting a Cloudflare Workers project",
+  "version": "1.0.0",
+  "repository": "https://github.com/grikomsn/workers-kv-redirect.git",
+  "author": "Griko Nibras <git@griko.id>",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"*.{js,json,md}\""
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3",
+    "prettier": "^2"
+  },
+  "prettier": {
+    "endOfLine": "auto",
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all"
+  },
+  "license": "MIT"
+}
