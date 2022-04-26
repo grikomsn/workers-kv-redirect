@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3",
+    "env-cmd": "^10",
     "prettier": "^2"
   },
   "prettier": {
