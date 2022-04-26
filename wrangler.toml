@@ -8,6 +8,7 @@ workers_dev = false
 [[kv_namespaces]]
 binding = "REDIRECTS"
 id = "68d001e9c2144621936848ec766b0535"
+preview_id = "68d001e9c2144621936848ec766b0535"
 
 [vars]
 BASE_URL = "https://griko.id"
