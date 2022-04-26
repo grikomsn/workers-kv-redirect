@@ -6,6 +6,7 @@
   "author": "Griko Nibras <git@griko.id>",
   "main": "index.js",
   "scripts": {
+    "dev": "env-cmd wrangler dev",
     "format": "prettier --write \"*.{js,json,md}\""
   },
   "devDependencies": {
