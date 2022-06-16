@@ -1,16 +1,17 @@
 {
   "name": "workers-kv-redirect",
-  "description": "A template for kick starting a Cloudflare Workers project",
+  "description": "Simple redirect using Cloudflare Workers with KV storage deployed using GitHub Actions 🔗",
   "version": "1.0.0",
   "repository": "https://github.com/grikomsn/workers-kv-redirect.git",
   "author": "Griko Nibras <git@griko.id>",
   "main": "index.js",
   "scripts": {
-    "dev": "env-cmd wrangler dev",
+    "dev": "env-cmd yarn wrangler dev",
     "format": "prettier --write \"*.{js,json,md}\""
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3",
+    "@cloudflare/wrangler": "^1",
     "env-cmd": "^10",
     "prettier": "^2"
   },
