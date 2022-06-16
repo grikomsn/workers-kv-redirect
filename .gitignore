@@ -1,11 +1,5 @@
-**/*.rs.bk
-.cargo-ok
+*.log
 .env*
-/dist
-/target
-bin/
-Cargo.lock
 node_modules/
-pkg/
-wasm-pack.log
-worker/
+
+!.env.example
