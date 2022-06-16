@@ -5,9 +5,10 @@ async function handler(/** @type {FetchEvent} */ event) {
   const url = new URL(event.request.url);
   if (url.pathname == "/") return Response.redirect(BASE_URL, 307);
 
-  if (url.pathname == "/_") {
+  if (url.pathname == "/_" && url.searchParams.get("token") == SECRET_TOKEN) {
     const list = await REDIRECTS.list();
-    return new Response(list.keys.reduce((acc, val) => acc + val.name + "\n", ""));
+    const links = await Promise.all(list.keys.map(async ({ name }) => `${name}\t${await REDIRECTS.get(name)}`));
+    return new Response(links.join("\n"));
   }
 
   const slug = url.pathname.split("/")[1];
